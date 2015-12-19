@@ -1,0 +1,11 @@
+<md-list-item class="md-3-line" ng-repeat="review in product.reviews" layout="row">
+    <div class="md-list-item-text" layout="column">
+        <h3>{{ review.name }}</h3>
+    <span>
+        <md-icon layout="column" ng-repeat="star in review.stars track by $index">star
+        </md-icon>
+    </span>
+        <p>{{ review.comment }}</p>
+    </div>
+    <md-divider></md-divider>
+</md-list-item>

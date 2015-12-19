@@ -1,0 +1,6 @@
+<div class="tabs-labels" style="text-align: center;">
+    <md-button class="tab md-raised" ng-class="{ 'md-primary':card.isSelected(1) }" ng-click="card.selectTab(1)">Description</md-button>
+    <md-button class="tab md-raised" ng-class="{ 'md-primary':card.isSelected(2) }" ng-click="card.selectTab(2)">Categories</md-button>
+    <md-button class="tab md-raised" ng-class="{ 'md-primary':card.isSelected(3) }" ng-click="card.selectTab(3)">Age</md-button>
+    <md-button class="tab md-raised" ng-class="{ 'md-primary':card.isSelected(4) }" ng-click="card.selectTab(4)" ng-show="product.reviews.length">Reviews</md-button>
+</div>
