@@ -1,0 +1,24 @@
+<div class="notes-wrapper">
+    <h1>notes</h1>
+    <div class="notes-wrapper">
+        <a class="card-notes" ng-repeat="note in notes">
+            <md-card title="{{note.name}}" layout="column" md-cols="6">
+                <md-card-title>
+                    <md-card-title-text>
+                        <span class="md-headline">{{note.name}}</span>
+                    </md-card-title-text>
+                    <md-card-title-media>
+                        <div class="md-media-lg card-media"></div>
+                    </md-card-title-media>
+                </md-card-title>
+                <md-card-content>
+                    <p>{{note.bio}}</p>
+                </md-card-content>
+                <md-card-actions layout="row" layout-align="end center">
+                    <md-button>Action 1</md-button>
+                    <md-button>Action 2</md-button>
+                </md-card-actions>
+            </md-card>
+        </a>
+    </div>
+</div>

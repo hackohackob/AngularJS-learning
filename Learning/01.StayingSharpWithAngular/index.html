@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="NoteWrangler">
+<head>
+    <meta charset="UTF-8">
+    <title>Notes App</title>
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+
+<script src="./javascript/app.js"></script>
+<script src="./javascript/routes.js"></script>
+<script src="./javascript/controllers/notes-index-controller.js"></script>
+
+<md-content >
+    <md-toolbar ng-controller="ToolbarController as toolbarCtrl">
+        <div class="md-toolbar-tools">
+            <md-button class="md-icon-button" aria-label="More" ng-click="openSidebar()">
+                <md-icon>menu</md-icon>
+            </md-button>
+            <a href="#/notes"><md-button class="md-raised" aria-label="Notes">Notes</md-button></a>
+            <a href="#/users"><md-button class="md-raised" aria-label="Users">Users</md-button></a>
+            <h2>
+                <span>Notes</span>
+            </h2>
+            <span flex></span>
+
+            <md-button class="md-icon-button" aria-label="More">
+                <md-icon md-font-icon="navigation:more_vert">more_vert</md-icon>
+            </md-button>
+            {{test}}
+        </div>
+    </md-toolbar>
+    <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left">
+        <md-toolbar class="md-theme-light">
+            <h1 class="md-toolbar-tools">Menu</h1>
+        </md-toolbar>
+    </md-sidenav>
+    <div class="main-wrapper" ng-view></div>
+</md-content>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<div class="users-wrapper">
+    <h1>Users</h1>
+    <div class="users-wrapper">
+        <a class="card-users" ng-repeat="user in users">
+            <md-card title="{{user.name}}">
+                <md-card-title>
+                    <md-card-title-text>
+                        <span class="md-headline">{{user.name}}</span>
+                    </md-card-title-text>
+                    <md-card-title-media>
+                        <div class="md-media-lg card-media"></div>
+                    </md-card-title-media>
+                </md-card-title>
+                <md-card-content>
+                    <p>{{user.bio}}</p>
+                </md-card-content>
+                <md-card-actions layout="row" layout-align="end center">
+                    <md-button>Action 1</md-button>
+                    <md-button>Action 2</md-button>
+                </md-card-actions>
+            </md-card>
+        </a>
+    </div>
+</div>
